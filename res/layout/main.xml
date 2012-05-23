@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/widget30"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/searchbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/querytext"
+                android:layout_centerHorizontal="true"
+                android:text="Search" >
+            </Button>
+
+            <EditText
+                android:id="@+id/querytext"
+                android:layout_width="200px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="5px"
+                android:textSize="18sp" >
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="29px"
+                android:layout_y="8px"
+                android:text="Favourite" >
+            </CheckBox>
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_x="24px"
+                android:layout_y="48px"
+                android:text="Preference" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/preference"
+                android:layout_width="70px"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:text="10"
+                android:textSize="18sp" >
+            </EditText>
+        </LinearLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
